@@ -1,8 +1,9 @@
-FROM debian:stretch-slim
+FROM debian:buster-slim
 MAINTAINER Mattias Wadman mattias.wadman@gmail.com
 RUN \
   apt-get update && \
   apt-get -y --no-install-recommends install \
+    procps \
     postfix \
     libsasl2-modules \
     opendkim \
